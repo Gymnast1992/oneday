@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 
-describe("example to-do app", () => {
+describe("Homepage", () => {
   beforeEach(() => {
     cy.visit("/");
   });
 
-  it("", () => {
+  it("TC01, ", () => {
     cy.get("").should("", 2);
   });
 });
