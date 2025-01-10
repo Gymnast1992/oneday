@@ -10,7 +10,7 @@ This repository contains automated end-to-end tests for the Oneday project using
 
 # Before running the tests, ensure the following tools are installed:
 
-    - Node.js (latest version) ;
+    - Node.js (v22.7.0) ;
     - Cypress - The testing framework used in this project ;
     - Git - For cloning this repository ;
 
@@ -35,6 +35,7 @@ npm install cypress --save-dev
 
     1. npx cypress open ;
     2. Navigate to e2e/homepage.cy.js ;
+                   e2e/about-us.cy.js ;
 
 # CREDENTIALS:
   Navigate to cypress/fixtures/data/credentials.json ;
