@@ -10,7 +10,7 @@ class Homepage {
     get liAccreditation() {return cy.get(".desktop-navbar__center li").eq(7)};
 
     verifyLengthOfTheListings(number) {
-        this.headerNavbar.should("Have.length", number);
+        this.headerNavbar.should("have.length", number);
     }
 
     verifyLiMentorsText(text) {
