@@ -1,4 +1,5 @@
 import Credentials from "../fixtures/data/credentials.json";
+import AboutUs from "../fixtures/pom/about-us.page";
 
 describe("About Us", () => {
   beforeEach(() => {
@@ -11,4 +12,15 @@ describe("About Us", () => {
     cy.get("section.about-us-contact-form").scrollIntoView();
   });
 
+  it("TC04, Should scroll to the contact form", () => {
+    AboutUs.scrollToTheContactForm();
+    AboutUs.isVisibleTextContactForm();
+  });
+
+  it("TC05, Should be able to fill out the  contact form", () => {
+    AboutUs.inputTheName(Credentials.name);
+    AboutUs.inputTheEmail(Credentials.email);
+    AboutUs.inputTheMessage(Credentials.message);
+    AboutUs.isVisibleSubmitBtn();
+  });
 });
